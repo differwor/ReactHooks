@@ -23,7 +23,7 @@ function TodoList(props) {
 
     return (
         <ul className="todo-list">
-            {todos.map(todo => (
+            {todos.map(todo => ( //map : tra ve 1 mang moi co gia tri tuong ung todos
                 <li 
                     key={todo.id}
                     onClick={() => handleClick(todo)}
