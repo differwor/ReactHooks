@@ -8,7 +8,8 @@ import PostList from "./components/PostList";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import PostFiltersForm from "./components/PostFiltersForm";
-import Clock from "./Clock";
+import Clock from "./components/Clock";
+import MagicBox from "./components/MagicBox";
 
 function App() {
   //state
@@ -107,12 +108,14 @@ function App() {
       <TodoForm onSubmit={handleTodoFormSubmit} />
       <TodoList todos={todoList} onToDoClick={handleTodoClick} /> */}
 
-      <PostFiltersForm onSubmit={handleFiltersChange} />
+      {/* <PostFiltersForm onSubmit={handleFiltersChange} /> */}
 
-      <PostList posts={postlist} />
-      <Pagination pagination={pagination} onPageChange={handlePageChange} />
+      {/* <PostList posts={postlist} /> */}
+      {/* <Pagination pagination={pagination} onPageChange={handlePageChange} /> */}
 
       <Clock />
+      <MagicBox />
+
     </div>
   );
 }
